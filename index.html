@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		html{ scroll-behavior: smooth}
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js">
+	</script>
+
+	</style>
+	<title>cost splitter</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<!--code for the smooth scroll-->
+
+	<ul>
+		<li><a href="#Tip">Tips!!</a></li>
+		<li><a href="#Calculator">Calculator!!</a></li>
+		<li><a href="#tab">Table!!</a></li>
+
+	</ul>
+	
+
+
+	
+
+
+	<!--end of smooth scroll-->
+
+	<div class="pimg1">
+		<div class="ptext">
+			<span class="border">
+				WELCOME!!!
+			</span>
+		</div>
+	</div>	
+	
+
+	<section class="section section-light">
+		<h2>NEED HELP WITH SPLITTING BILLS?</h2>
+		<p>
+			<br>
+		 <h3>Splitting bills that you may have with friends has never been so easy before. On this page, you will find it very easy to use and be able to use a percentage calculator, a classic calculator, tip suggestions with its own calculator on each page, and a worksheet where you can add people and the amounts they owe to help you break down the price per person.</h3></p>
+	</section>
+
+	<div class="pimg2">
+		<div class="ptext">
+			<span class="border">
+				Calculation made easy!!
+			</span>
+		</div>
+	</div>	
+	<!--tip link-->
+<div id="Tip"></div>
+<!--tip link-->
+	<section id="Tip"class="section section-dark">
+		<h2>Tip suggestions!!!</h2>
+		<h3>How much to tip?
+			<br>
+
+If you ask 10 people how much to tip in a given situation, you'll get several answers and a slew of hot-headed opinions about the "right" thing to do.
+
+To help start your next debate, here's a quick guide to customary gratuities for various services. The guide is provided by the Emily Post Institute. Those with passionate views about how much to tip the pizza delivery guy, please see the information in the footnote provided by two other sources.</h3>
+		
+		<!-- this is for the dropdown button -->
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">TIPS!!</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="resturant-bar.html">Resturant/Bar</a>
+    <a href="daily-life.html">Daily Life</a>
+    <a href="travel.html">Travel</a>
+  </div>
+</div>
+
+<!-- end of code for dropdown-->
+</section>
+
+
+
+<!--link code-->
+<div id="Calculator"></div>
+<!--link code-->
+<section class cal id="Calculator"></section>
+<!--Tip calculator cod-->
+<section id="CALCULATOR!!"class="section section-dark">
+
+<form name="formCalci">
+
+<input type="text" name="answers"  id="finalanswer"> <br> </br>
+
+<input type="button" value="1" onclick="formCalci.answers.value += '1' " >
+<input type="button" value="2" onclick="formCalci.answers.value += '2' " >  
+<input type="button" value="3" onclick="formCalci.answers.value += '3' " >
+
+
+<br> </br>
+
+<input type="button" value="4" onclick="formCalci.answers.value += '4' " >
+<input type="button" value="5" onclick="formCalci.answers.value += '5' " >
+<input type="button" value="6" onclick="formCalci.answers.value += '6' " >
+
+
+<br> </br>
+
+<input type="button" value="7" onclick="formCalci.answers.value += '7' " >
+<input type="button" value="8" onclick="formCalci.answers.value += '8' " >
+<input type="button" value="9" onclick="formCalci.answers.value += '9' " >
+
+<br> </br>
+
+<input type="button" value="+" onclick="formCalci.answers.value += '+' " >
+<input type="button" value="-" onclick="formCalci.answers.value += '-' " >
+<input type="button" value="/" onclick="formCalci.answers.value += '/' " >
+
+<br></br>
+
+<input type="button" value="0" onclick="formCalci.answers.value += '0' " >
+<input type="button" value="*" onclick="formCalci.answers.value += '*' " >
+<input type="button" value="="onclick="formCalci.answers.value = eval(formCalci.answers.value) " >
+<br> </br>
+
+<input type="button" value="Clear All" id="clearbutton" onclick="formCalci.answers.value = '' " > </form><br>
+<!-- tip calculator-->
+
+<h4>Tip Calculator</h4>
+Enter the bill amount : $
+<input type="text" id="bill"><br>
+Tip percentage: 
+<input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value, 'bill')" style="width:250px;">
+<span id="slideval">0%</span>
+<h2>Tip to leave = <span id="tip"></span></h2>
+
+
+</span>
+		
+	<br>
+	<br>
+	<br>
+
+	<div class="pimg3">
+		<div class="ptext">
+	<section id="Input Table!!!"class="section section-light">
+			</section>
+				<h1>Input Table</h1>
+				
+	
+
+
+		<!--code for the input table-->
+		<nav class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<h5>Date:</h5>
+					<h5>Description:</h5>
+					<h5>First Name:</h5>
+					<h5>Last Name:</h5>
+					<h5>Contact:</h5>
+					<h5>Percentage:</h5>
+					<h5>Amount Owe:</h5>
+				</div>
+
+				<div class="col">
+					<input type="text" name="DAT" id="DAT"> <br>
+					<input type="text" name="DOE" id="DOE">  <br>
+					<input type="text" name="fname" id="fname">  <br>
+					<input type="text" name="lname" id="lname"> <br>
+					<input type="https" name="contactInfo" id="contactInfo"> <br>
+					<input type="text" name="amount" id="amount"> <br>
+					<input type="text" name="percentage" id="percentage">
+					<br>
+					<button onclick="addRow();">Add Information</button><br/><br/>
+					
+
+					
+
+				</div>
+
+				</div>
+			
+		</nav>
+
+
+
+
+
+<!--link code-->
+<div id="tab"></div>
+<!--link code-->
+<nav class="container-fluid">
+	<div class="row">
+		<div class="col">
+        	<table class="input" border="5" id ="table">   
+            	<tr>
+            		<button onclick="removeSelectedRow();">Remove Selected Row</button> <!--onclick removeSelectedRow();-->
+	            	<th>Date</th>
+	            	<th>Description of Event</th>
+	                <th>First Name</th>
+	                <th>Last Name</th>
+	                <th>Amount owed</th>
+	                <th>Percentage owed</th>
+	                <th>Contact Information</th>
+	            </tr>
+          	</table>
+    	</div>
+</div>
+</nav>
+
+ 
+
+		<!--end of table-->
+
+		
+		<h6>THANK YOU!!
+		<p>WE WANT TO TAKE OUT A LITTLE TIME TO THANK YOU FOR CHOOSING US TO HELP YOU WITH YOUR CALCULATION SITUATIONS!!!</p></h6>
+
+		
+	
+
+<script src="script.js"></script>
+</body>
+</html>

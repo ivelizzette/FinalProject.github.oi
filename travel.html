@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="resturant-bar.html">Resturant/Bar</a></li>
+		<li><a href="daily-life.html">Daily Life!!</a></li>
+
+	</ul>
+	<!--video background code-->
+<!-- <div class="background-wrap">
+		<div class="container">
+    <video id="preload="auto" autoplay="true" loop="loop" muted="muted" >
+        <source src="travel.mp4" type="video/mp4" />
+    </video>
+   
+    </div>
+</div> -->
+<!--end of vbc-->
+<!--Tip calculator cod-->
+<div class="overlay">
+<section id="CALCULATOR!!"class="section section-dark1">
+
+<form name="formCalci">
+
+<input type="text" name="answers"  id="finalanswer"> <br> </br>
+
+<input type="button" value="1" onclick="formCalci.answers.value += '1' " >
+<input type="button" value="2" onclick="formCalci.answers.value += '2' " >  
+<input type="button" value="3" onclick="formCalci.answers.value += '3' " >
+
+
+<br> </br>
+
+<input type="button" value="4" onclick="formCalci.answers.value += '4' " >
+<input type="button" value="5" onclick="formCalci.answers.value += '5' " >
+<input type="button" value="6" onclick="formCalci.answers.value += '6' " >
+
+
+<br> </br>
+
+<input type="button" value="7" onclick="formCalci.answers.value += '7' " >
+<input type="button" value="8" onclick="formCalci.answers.value += '8' " >
+<input type="button" value="9" onclick="formCalci.answers.value += '9' " >
+
+<br> </br>
+
+<input type="button" value="+" onclick="formCalci.answers.value += '+' " >
+<input type="button" value="-" onclick="formCalci.answers.value += '-' " >
+<input type="button" value="/" onclick="formCalci.answers.value += '/' " >
+
+<br></br>
+
+<input type="button" value="0" onclick="formCalci.answers.value += '0' " >
+<input type="button" value="*" onclick="formCalci.answers.value += '*' " >
+<input type="button" value="="onclick="formCalci.answers.value = eval(formCalci.answers.value) " >
+<br> </br>
+
+<input type="button" value="Clear All" id="clearbutton" onclick="formCalci.answers.value = '' " > </form>
+<!-- tip calculator-->
+<h4>Tip Calculator</h4>
+Enter the bill amount : $
+<input type="text" id="bill"><br>
+Tip percentage: 
+<input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value, 'bill')" style="width:250px;">
+<span id="slideval">0%</span>
+<h2>Tip to leave = <span id="tip"></span></h2>
+
+<h2>Tip Calculator</h2>
+Enter the bill amount for your meal: $
+<input type="text" id="bill"><br>
+Tip percentage: 
+<input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value, 'bill')" style="width:400px;">
+<span id="slideval">0%</span>
+<h2>Tip to leave = <span id="tip"></span></h2>
+<!--End of Tip calculator-->
+
+<section class="travel">
+
+<h1>SKYCAP AT AIRPORT:</h1>
+	
+		<p>$1 per bag if you check-in curbside</p> 
+		<p>$2 per bag if skycap takes bags to check-in counter.</p>
+	
+<h1>HOTEL DOORMAN:</h1>
+	
+		<p>1 per bag for help with luggage</p>
+		<p>$1 per person for hailing a cab</p>
+	
+
+<h1>HOTEL BELLHOP</h1>
+	
+		<p>$1 per bag for bringing luggage to your room (but a $2 minimum if you have just one bag</p>
+	
+
+<h1>HOTEL HOUSEKEEPER:</h1>
+	
+		<p>$2 to $5 per night</p>
+	
+<h1>HOTEL CONCIERGE:</h1>
+	
+		<p>$5 for getting you tickets or reservations ($10-plus if they're hard to get)</p>
+		<p>No tip required when you ask for directions.
+		</p>
+	
+
+<h1>CRUISE:</h1>
+	
+		<p>Varies. Ask cruise line about customary gratuities.<p>
+	
+
+<h6>Information about tips provided by CNN MONEY</h6>
+
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="script.js"></script>
+
+</body>
+</html>

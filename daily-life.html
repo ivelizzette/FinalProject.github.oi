@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="resturant-bar.html">Resturant/Bar</a></li>
+		<li><a href="travel.html">Travel</a></li>
+
+	</ul>
+
+<!--video background code-->
+<div class="background-wrap">
+		<div class="container">
+    <video id="preload="auto" autoplay="true" loop="loop" muted="muted" >
+        <source src="mon.mp4" type="video/mp4" />
+    </video>
+   
+    </div>
+</div>
+<!--end of vbc-->
+
+<!--Tip calculator cod-->
+<div class="overlay">
+<section id="CALCULATOR!!"class="section section-dark1">
+
+<form name="formCalci">
+
+<input type="text" name="answers"  id="finalanswer"> <br> </br>
+
+<input type="button" value="1" onclick="formCalci.answers.value += '1' " >
+<input type="button" value="2" onclick="formCalci.answers.value += '2' " >  
+<input type="button" value="3" onclick="formCalci.answers.value += '3' " >
+
+
+<br> </br>
+
+<input type="button" value="4" onclick="formCalci.answers.value += '4' " >
+<input type="button" value="5" onclick="formCalci.answers.value += '5' " >
+<input type="button" value="6" onclick="formCalci.answers.value += '6' " >
+
+
+<br> </br>
+
+<input type="button" value="7" onclick="formCalci.answers.value += '7' " >
+<input type="button" value="8" onclick="formCalci.answers.value += '8' " >
+<input type="button" value="9" onclick="formCalci.answers.value += '9' " >
+
+<br> </br>
+
+<input type="button" value="+" onclick="formCalci.answers.value += '+' " >
+<input type="button" value="-" onclick="formCalci.answers.value += '-' " >
+<input type="button" value="/" onclick="formCalci.answers.value += '/' " >
+
+<br></br>
+
+<input type="button" value="0" onclick="formCalci.answers.value += '0' " >
+<input type="button" value="*" onclick="formCalci.answers.value += '*' " >
+<input type="button" value="="onclick="formCalci.answers.value = eval(formCalci.answers.value) " >
+<br> </br>
+
+<input type="button" value="Clear All" id="clearbutton" onclick="formCalci.answers.value = '' " > </form>
+<!-- tip calculator-->
+<h4>Tip Calculator</h4>
+Enter the bill amount : $
+<input type="text" id="bill"><br>
+Tip percentage: 
+<input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value, 'bill')" style="width:250px;">
+<span id="slideval">0%</span>
+<h2>Tip to leave = <span id="tip"></span></h2>
+<!-- <h2>Tip Calculator</h2>
+Enter the bill amount for your meal: $
+<input type="text" id="bill"><br>
+Tip percentage: 
+<input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value, 'bill')" style="width:400px;">
+<span id="slideval">0%</span>
+<h2>Tip to leave = <span id="tip"></span></h2> -->
+<!--End of Tip calculator-->
+<H1>DAILY LIFE</H1>
+
+
+ <h3> TAXI DRIVER:</h3> 
+ 		
+ 			<p>varies depending on locality</p>
+ 			<p>assume 15% will be enough</p>
+ 			<p>an extra $1 to $2 for help with bags.</p>
+ 		
+
+ 		<h3>FOOD DELIVERY PERSON:</h3>
+ 			
+ 				<p>10% of the bill (excl). tax</p>
+ 				<p>at least $1 for bills up to $10</p>
+ 				<p>Should tip 15%-20% for a difficult delivery</p>
+ 			
+ 		<h3>GROCERY LOADER:</h3>
+ 			
+ 				<p>Check with store policy if tips are accepted.</p>
+ 				<p>If so, $1 for bringing bags to care</p>
+ 				<p>$1.50 to $3 if you have more than 3 bags</p>
+ 			
+
+ 		<h3>BARBER:</h3>
+ 		
+ 			<p>15% to 20% minimum $1 for haircut</p>
+ 			<p>For other sevices(shampoo, shave, or manicure) tip $1 to $2 to service provider.</p>
+ 			
+
+ 		<h3>HAIRDRESSER:</h3>
+	 		
+	 			<p>15% to 20%. (It is ow acceptable to tip owner, unless he or she says otherwise</p>
+	 		
+
+	 	<h3>SHAMPOO PERSON:</h3>
+	 		
+	 			<p>$2</p>
+	 			
+
+	 	<h3>MANICURIST:</h3>
+	 		<p>15%</p>
+
+	 	<h3>SPA SERVICE:</h3>
+	 		
+	 			<p>15% TO 20%. If service is provided by owner, no tip.</p>
+	 		
+
+	 	<h3>STAFF AT COFFEE/FOOD RETAILERS WITH TIP JARS:</h3>
+	 		
+	 			<p>No tip required. it;s completely optional.</p>
+	 		
+
+	 	<h3>HANDYMAN</h3>
+	 		
+	 			<p>No Tip</p>
+	 		
+	 	
+	 	<h3>GAS ATTENDANT</h3>
+	 		
+	 			<p>No Tip</p>
+	 		
+
+<p>* Mike Lynn, associate professor of consumer behavior at the Cornell Hotel School suggests tipping pizza delivery folk a minimum of $2 per pizza. His reasoning: Food delivery can be dangerous if delivering to crime-ridden neighborhoods or driving in bad weather, etc. The Web site www.tipthepizzaguy.com suggests the following: 15% for normal service, with a $2 minimum; 20% for excellent service; 10% or less for poor service; at least 10% for orders of $50 or more. Don't assume a delivery charge, if there is one, goes to the pizza deliverer. Ask the person who takes your order.</p>
+
+<h6>Information about tips provided by CNN MONEY</h6>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

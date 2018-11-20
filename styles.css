@@ -1,0 +1,346 @@
+/*CODE FOR PICTURE BACKGROUN*/
+
+body, html{
+    height:100%;
+    margin:0;
+    font-size:5;
+    font-family: "lato", Sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    font-family: fantasy;
+}
+
+.pimg1, .pimg2, .pimg3{
+    position:relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image:url('images/dance100.jpg');
+    min-height:100%;
+}
+
+.pimg2{
+    background-image:url('images/dance200.jpg');
+    min-height:300px;
+}
+
+.pimg3{
+    
+    min-height:00px;
+
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.section section-light{
+    background-image: url('images/dance.jpg');
+    color: #666;
+}
+
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+
+.ptext  .border{
+    background-color:#111;
+    color:#fff;
+    padding: 20px;
+}
+
+/*END OF CODE FOR PICTURE FOR BACKGROUND*/
+
+
+
+/* styles for the dropdown button*/
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}<style>
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/* START OF CODING FOR DROWDOWN BUTTON*/
+
+
+
+
+
+/*code for table and calculator*/
+
+.formstyle{
+ width:250px;
+ height:420px;
+ margin:auto;
+ border:6px solid black;
+}
+.container{overflow: hidden}
+.tab{float: left;}
+.tab-2{margin-left: 50px}
+.tab-2 input{display: block;margin-bottom: 10px}
+tr{transition:all .25s ease-in-out}
+tr:hover{background-color:#EEE;cursor: pointer}
+
+input{
+    border: double;
+    border-style: solid; 
+ width:80px;
+ height:40px;
+ background-color: white;
+ font-size:30px;
+ color:black;
+ border-bottom:3px solid black;
+ 
+}
+
+#finalanswer{
+ width:250px;
+}
+
+#clearbutton{
+ width:250px;
+ font-color: solid black;
+
+}
+
+
+.inputt{
+    font-size: 15px ;
+}
+
+
+
+
+/*smoothing code*/
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+ul{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+
+}
+ul li{
+    list-style: none;
+
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    background: #fff;
+    width: 140px;
+    color: #262626;
+    margin: 4px 0;
+    padding-left: 15px;
+    text-transform: uppercase;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+}
+ul li a:hover{
+    background: #262626;
+    color: #fff;
+}
+
+#container{
+width: 100%;
+height: 100vh;
+scroll-behavior: smooth;
+overflow-y: scroll; 
+}
+#container div h1{
+    position: absolute;
+    top: 50%
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 8em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.table{
+    align: center;
+    padding: 0;
+}
+
+
+#DOE{
+    width: 100%;
+    height: 9%;
+}
+
+#DAT{
+    width: 100%;
+    height: 9%;
+}
+
+#fname{
+    width: 100%;
+    height: 9%;
+}
+
+#lname{
+    width: 100%;
+    height: 9%;
+}
+
+#amount{
+    width: 100%;
+    height: 9%;
+}
+
+#percentage{
+    width: 100%;
+    height: 9%;
+}
+
+#contactInfo{
+    width: 100%;
+    height: 9%;
+}
+
+
+
+
+
+
+/*vidbackground cod*/
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+      position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    filter:opacity(50%);
+
+}
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+
+
+/*CODE FOR REMOVE BUTTON*/
+
+tr{transition:all .25s ease-in-out};
+tr:hover{background-color:#EEE;cursor: pointer}
+
+
+.box{
+    padding: 0;
+    width: 100%
+    width: 100%;
+    align-items: center;
+}
